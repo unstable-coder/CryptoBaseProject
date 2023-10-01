@@ -1,0 +1,282 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.image{
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.image >img{
+  margin: 15vh;
+  animation: floating 1s ease-in-out infinite;
+}
+.txt-on-img{
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  color: aliceblue;
+}
+.footer{
+  
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(14, 11, 14);
+  color: #e4ebed;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.inputbox{
+ margin: 5px;
+}
+.register{
+ padding-left: 30%;
+}
+.login{
+  padding-left: 30%;
+}
+
+.containerxy {
+  padding: 2rem;
+  background-color: #6f8de8;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow added with a slight tilt effect */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+  transform: rotateX(10deg); /* Tilt effect */
+}
+
+.containerxy:hover {
+  transform: rotateX(10deg) rotateY(180deg); /* Adjust the rotation angles to tilt and flip */
+}
+
+/* Optional: If you want to add a floating effect */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.containerxy:hover {
+  animation: floating 1s ease-in-out infinite;
+}
+
+
+.containerxy >img {
+  height: 60px;
+  width: 80px;
+  object-fit: contain;
+}
+.coins{
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container1{
+  padding: 1rem;
+  background-color: #e4ebed;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  }
+  .btn{
+    margin: 1rem;
+    
+  }
+  .formContainer{
+    padding: 1rem;
+    background-color: #e4ebed;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .typing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: #4FC3F7;
+    animation: cursorBlink 0.8s steps(3) infinite;
+}
+
+@keyframes cursorBlink {
+
+    0%,
+    75% {
+        opacity: 1;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.typing {
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+}
+
+.typing h1 {
+    position: relative;
+    color: #ed1834;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: type 5s steps(11) infinite;
+}
+
+@keyframes type {
+
+    0%,
+    100% {
+        width: 0px;
+    }
+
+    30%,
+    60% {
+        width: 394.09px;
+    }
+}
+
+@media(max-width: 330px) {
+    .typing h2 {
+        font-size: 3rem;
+        animation: type 5s steps(13) infinite;
+    }
+
+    @keyframes type {
+
+        0%,
+        100% {
+            width: 0px;
+        }
+
+        30%,
+        60% {
+            width: 305px;
+        }
+    }
+}
+/* Existing CSS styles */
+
+/* Add responsive styles for smaller devices */
+@media (max-width: 768px) {
+  .txt-on-img {
+    text-align: center;
+    top: 40%; /* Adjust as needed */
+    right: 0;
+  }
+
+  .txt-on-img .typing {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer .container .col-3 {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Additional media query for very small devices */
+@media (max-width: 576px) {
+  .txt-on-img {
+    top: 30%; /* Adjust as needed */
+  }
+}
+/* Existing CSS styles */
+
+/* Add responsive styles for smaller devices */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Additional media query for very small devices */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+.chartcss{
+  height: 80vh;
+  width: 90%;
+  margin-left: 10vh;
+ 
+}

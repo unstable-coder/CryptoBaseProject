@@ -1,0 +1,3 @@
+export const CRYPTO_LIST = "CRYPTO_LIST"
+export const SEARCH_CRYPTO = "SEARCH_CRYPTO"
+export const SET_CRYPTO_LIST = "SET_CRYPTO_LIST"
