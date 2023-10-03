@@ -1,3 +1,4 @@
 node_modules
 cryptoback/node_modules
 my-crypto/node_modules
+.gitignore
