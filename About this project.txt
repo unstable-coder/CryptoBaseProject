@@ -1,18 +1,18 @@
-Hello,
-This project name is CryptBase. It is a website based on MERN Stack. I have used RestApi to fetch real time data and show it on dashboard.
-Highlight things of the project
-1.React js
-2.Node js
-3.MongoDB
-4.RestAPI
-5.chart js
-6.Nodemailer
-7.Redux -saga
-8.JwtWebToken
-9.Stock widget
-10. React-bootstrap
-11.CSS
+CryptBase is a cutting-edge web platform leveraging the power of MERN Stack (MongoDB, Express.js, React.js, Node.js) to 
+deliver a seamless and intuitive experience for users. Here are the key highlights of this dynamic project:
 
-Data that we are recievieng in this website is fully real time,graph are getting updated according to the market. 
-It is also responsive and used friendly. User and create account and login to access their wallet.They alo recieve mail 
-on login time.
+React.js: Utilizing React.js for a responsive and interactive user interface, ensuring a smooth and engaging experience.
+Node.js: Employing Node.js for server-side operations, enhancing the efficiency and performance of the application.
+MongoDB: Leveraging MongoDB for data storage and management, allowing for efficient handling of real-time data.
+RestAPI: Integrating RestAPI to fetch real-time data and deliver it dynamically, ensuring users receive the latest market information.
+Chart.js: Incorporating Chart.js to visualize real-time market data with dynamic and interactive charts, enhancing user understanding.
+Nodemailer: Integrating Nodemailer to provide email notifications, enhancing user engagement and keeping them informed on login.
+Redux-Saga: Implementing Redux-Saga for state management, ensuring a smooth flow of data and actions within the application.
+JWT (JSON Web Tokens): Employing JWT for secure authentication and authorization, enhancing the security of user accounts and data.
+Stock Widget: Implementing a stock widget that displays real-time market data, providing users with valuable insights at a glance.
+React-Bootstrap: Utilizing React-Bootstrap to ensure a consistent and visually appealing UI across different devices.
+CSS: Employing CSS to style and design the application, enhancing its overall look and feel.
+
+The real-time data updates and responsiveness of CryptBase enable users to access and manage their accounts efficiently
+ and stay updated with the latest market trends. By allowing users to create accounts and receive email notifications
+  upon login, the platform enhances user engagement and provides a seamless user experience.
